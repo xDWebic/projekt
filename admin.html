@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrace</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="admin.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <h1>Administrátorská stránka</h1>
+        <a href="/index.html">Hlavní Stránka</a>
+        <button id="theme-toggle">Přepnout mód</button>
+    </div>
+</header>
+<main>
+    <div>
+        <h2>Přidat nový produkt</h2>
+        <form id="add-product-form">
+            <input type="text" id="name" placeholder="Název produktu" required />
+            <input type="text" id="description" placeholder="Popis produktu" required />
+            <input type="number" id="price" placeholder="Cena produktu" required />
+            <button type="submit">Přidat</button>
+        </form>
+    </div>
+    <div>
+        <h2>Seznam produktů</h2>
+        <div id="product-list"></div>
+    </div>
+</main>
+</body>
+</html>
