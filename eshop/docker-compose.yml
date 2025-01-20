@@ -1,0 +1,9 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: mysql-eshop
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: eshop
+    ports:
+      - "3307:3306"
